@@ -1,0 +1,77 @@
+.contenedor{
+    margin: auto;
+    align-self: center;
+    width: 80vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1vw;
+}
+
+.producto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+    height: 400px;
+    border: 2px solid black;
+    text-align: center;
+}
+
+header {
+    height: 5vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10vw;
+}
+
+.navBar{
+    list-style: none;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    display: flex;
+    flex-direction: row;
+    width: 40vw;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+}
+
+#buscador {
+    width: 20vw;
+    height: 2vh;
+}
+
+button {
+    color: white;
+    font-family: fantasy;
+    background-color: aquamarine;
+    border: solid 1px black;
+}
+
+.oculto {
+    display: none;
+}
+
+.articuloCesta{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#comprar{
+    justify-self: center;
+}
+
+.contenedorPopups {
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 10;
+}
+
+.popUp{
+    border: solid black;
+    margin: auto;
+}
