@@ -4,16 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Aprendiendo DOM</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Dunkel - Tienda online</title>
 </head>
 <body>
     <header>
         <nav>
             <ul class="navBar">
-                <li>Fútbol</li>
-                <li>Natación</li>
-                <li>Basketball</li>
-                <li>Voleyball</li>
+                <li id="inicio">Inicio</li>
+                <li id="hombres">Hombres</li>
+                <li id="mujeres">Mujeres</li>
+                <li id="botonTodos">Todos los artículos</li>
             </ul>
         </nav>
         <div>
@@ -22,20 +25,31 @@
             <button id="verCesta">Ver cesta</button>
         </div>
     </header>
-    <main>
-        <div id="contenedorPopups">    
+    <main id="principal">
+        <div id="paginaInicio" class="paginaInicio">
+            <h1>Dunkel</h1>
+            <h2>El deporte es vida. Vívelo bien equipado.</h2>
+            <img src="assets/inicio.jpg" alt="Hombre nadando" id="imagenInicio">
         </div>
-        <div id="contenedor" class="contenedor">
+        <div id="contenedor" style="display:none">
         </div>
-        <div id="paginaCesta" class="oculto">
+        <div id="paginaCesta" class="oculto" style="display:none">
+            <div class=tituloCesta>
+                <p>Producto</p>
+                <p>Precio</p>
+                <p>Cantidad</p>
+                <p>Subtotal</p>
+            </div>
             <div id="cajaCesta">
+            </div>
+            <div id="totalCesta">
             </div>
             <button class="boton" id="botonComprar">Comprar</button>
         </div>
     </main>
     <footer>
-
     </footer>
-<script src="index.js"></script>
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 </html>
